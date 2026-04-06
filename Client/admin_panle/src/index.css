@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+
+
+
+
+
+.slick-prev, 
+.slick-next {
+  width: 40px;
+  height: 40px;
+  background: black !important;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute !important; */
+  z-index: 10;
+}
+
+.slick-prev:hover, 
+.slick-next:hover {
+  background: blue !important;
+}
