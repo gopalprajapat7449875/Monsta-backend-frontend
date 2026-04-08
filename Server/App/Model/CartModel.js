@@ -7,6 +7,7 @@ let cartSchema = mongoose.Schema({
     _ProductPrice: { type: Number },
     _Quantity: { type: Number, default: 1 },
     _ProductImage: { type: String },
+    _Product_Slug: { type: String },
     _ProductAddedAt: { type: Date, default: Date.now }
    
         

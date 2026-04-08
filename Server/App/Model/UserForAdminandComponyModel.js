@@ -64,6 +64,11 @@ let UserForAdminAndCompanymodel = mongoose.Schema(
             
 
         },
+         _UserCoupanCode: {
+            type: String,
+           
+
+        },
          _UserCountry: {
             type: String,
             required: [true, "please File  _UserCountry"],

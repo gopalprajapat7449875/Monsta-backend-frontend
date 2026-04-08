@@ -21,7 +21,7 @@ App.use('/upload-files/slider', express.static('upload-files/slider'))
 App.use('/upload-files/subsubcategory', express.static('upload-files/subsubcategory'))
 App.use('/upload-files/userimages', express.static('upload-files/userimages'))
 App.use('/upload-files/product', express.static('upload-files/product'))
-App.use('/upload-files/cartimges', express.static('upload-files/cartimages'))
+// App.use('/upload-files/cartimages', express.static('upload-files/cartimages'))
 mongoose.connect(`mongodb://127.0.0.1:27017/${process.env.DBCONACTION}`)
 
     .then((res) => {

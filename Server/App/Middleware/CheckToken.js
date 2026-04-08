@@ -1,13 +1,20 @@
 const jwt = require("jsonwebtoken");
 let CheckToken = (req, res, next) => {
+
+
     try {
         let token = req.headers.authorization;
+
+        
         let onlytoken = token.split(" ")[1]
+    
+
         let deCode = jwt.verify(onlytoken, process.env.TOKENKEY)
+     
         let { UserId } = deCode
-
-
-        req.body.UserId = UserId
+                
+ 
+        req.body._UserId = UserId
         next();
     } catch (error) {
         let obj = {
